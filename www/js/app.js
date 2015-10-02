@@ -18,7 +18,7 @@ app.run(function ($ionicPlatform) {
   });
 });
 
-app.controller('MapController', ['$scope', '$cordovaGeolocation', function ($scope, $cordovaGeolocation) {
+app.controller('MapController', ['$scope', '$cordovaGeolocation', '$ionicLoading', function ($scope, $cordovaGeolocation, $ionicLoading) {
 
   document.addEventListener('deviceready', onDeviceReady, false);
 
